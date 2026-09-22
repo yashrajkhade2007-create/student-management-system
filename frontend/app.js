@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api/students';
+const API_URL = 'https://student-management-system-rxuj.onrender.com/api/students';
 
 // 1. Page लोड झाल्यावर सर्व विद्यार्थ्यांची लिस्ट फेच करणे
 document.addEventListener('DOMContentLoaded', fetchStudents);
