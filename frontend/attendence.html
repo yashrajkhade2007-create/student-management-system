@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management - SMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>🎓 SMS Portal</h2>
+        <ul>
+            <li><a href="index.html">🏠 Dashboard</a></li>
+            <li><a href="students.html">👨‍🎓 Students</a></li>
+            <li><a href="attendance.html" class="active">📅 Attendance</a></li>
+            <li><a href="#">📚 Courses</a></li>
+            <li><a href="#">📝 Marks</a></li>
+            <li><a href="#">🔐 Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Attendance Management</h1>
+
+        <!-- Date & Class Filter -->
+        <div class="filter-container" style="background: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+            <h2>Mark Attendance</h2>
+            <form style="display: flex; gap: 15px; margin-top: 15px; align-items: center;">
+                <label>Select Date:</label>
+                <input type="date" required style="padding: 10px;">
+                <label>Select Class:</label>
+                <select style="padding: 10px;">
+                    <option>Class 10</option>
+                    <option>Class 9</option>
+                </select>
+                <button type="button" style="padding: 10px 20px; background: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;">Fetch Students</button>
+            </form>
+        </div>
+
+        <!-- Attendance Sheet Table -->
+        <div class="table-container" style="background: white; padding: 20px; border-radius: 8px; margin-top: 30px;">
+            <h2>Student Attendance Sheet</h2>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                <thead>
+                    <tr style="background: #2c3e50; color: white; text-align: left;">
+                        <th style="padding: 10px;">Roll No</th>
+                        <th style="padding: 10px;">Student Name</th>
+                        <th style="padding: 10px;">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #ddd;">
+                        <td style="padding: 10px;">101</td>
+                        <td style="padding: 10px;">Rahul Sharma</td>
+                        <td style="padding: 10px;">
+                            <label><input type="radio" name="student_101" checked> Present</label> &nbsp;
+                            <label><input type="radio" name="student_101"> Absent</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button style="margin-top: 20px; padding: 10px 20px; background: #27ae60; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit Attendance</button>
+        </div>
+    </div>
+</body>
+</html>
