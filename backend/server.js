@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// Student Routes Register करा
+// Student Routes Register
 app.use('/api/students', studentRoutes);
 
 app.get('/', (req, res) => {
